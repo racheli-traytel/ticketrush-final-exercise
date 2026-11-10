@@ -1,0 +1,1 @@
+Problem: the refund logic is returning the service fee. The checkout system recalculates the total and accidentally refunds the service charge as if it were a ticket amount. We should review calcRefund and ensure only the ticket price is refunded; the SERVICE_FEE should remain charged.
