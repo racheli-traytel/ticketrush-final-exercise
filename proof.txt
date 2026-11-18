@@ -1,0 +1,63 @@
+### git worktree list
+C:/Users/user1/Desktop/ticketrush-final-exercise/ticketrush          0a34c09 [main]
+C:/Users/user1/Desktop/ticketrush-final-exercise/ticketrush-dana     22d825c [dana/promo]
+C:/Users/user1/Desktop/ticketrush-final-exercise/ticketrush-feature  d04db9f [feature/early-access]
+C:/Users/user1/Desktop/ticketrush-final-exercise/ticketrush-noa      cf55ca7 [review/noa-refund]
+C:/Users/user1/Desktop/ticketrush-final-exercise/ticketrush-ruth     7782bc8 [ruth/fixes]
+
+### git branch -a -vv
++ dana/promo                                          22d825c (C:/Users/user1/Desktop/ticketrush-final-exercise/ticketrush-dana) feat: student discount promo
++ feature/early-access                                d04db9f (C:/Users/user1/Desktop/ticketrush-final-exercise/ticketrush-feature) feat: add member pricing and waitlist
+* main                                                0a34c09 [origin/main: ahead 7] Merge branch 'dana/promo'
++ review/noa-refund                                   cf55ca7 (C:/Users/user1/Desktop/ticketrush-final-exercise/ticketrush-noa) docs: review refund logic
++ ruth/fixes                                          7782bc8 (C:/Users/user1/Desktop/ticketrush-final-exercise/ticketrush-ruth) fix: update concert date
+  remotes/origin/HEAD                                 -> origin/main
+  remotes/origin/dana/promo                           d4b1e35 test: add student discount tests
+  remotes/origin/main                                 6e5b25d feat: friendlier message for empty quantity
+  remotes/origin/noa/refund                           f7e8785 test: refund tests
+  remotes/origin/racheli-traytel/dana/promo           22d825c feat: student discount promo
+  remotes/origin/racheli-traytel/feature/early-access d04db9f feat: add member pricing and waitlist
+  remotes/origin/racheli-traytel/main                 0a34c09 Merge branch 'dana/promo'
+  remotes/origin/racheli-traytel/result               0a34c09 Merge branch 'dana/promo'
+  remotes/origin/racheli-traytel/review/noa-refund    cf55ca7 docs: review refund logic
+  remotes/origin/racheli-traytel/ruth/fixes           7782bc8 fix: update concert date
+  remotes/origin/ruth/fixes                           fee9f58 wip: try new fonts
+
+### git log --graph --oneline --all -n 80
+*   0a34c09 (HEAD -> main, tag: v1.1, origin/racheli-traytel/result, origin/racheli-traytel/main) Merge branch 'dana/promo'
+|\  
+| * 22d825c (origin/racheli-traytel/dana/promo, dana/promo) feat: student discount promo
+* | dc12b47 fix: update concert date
+* | bd3748e Revert "perf: faster price formatting"
+* | 4522672 perf: faster price formatting
+* | 73de01c security: remove API key from tracked files
+|/  
+| * 7782bc8 (origin/racheli-traytel/ruth/fixes, ruth/fixes) fix: update concert date
+| * bf577e6 wip: checkout redesign
+|/  
+| * cf55ca7 (origin/racheli-traytel/review/noa-refund, review/noa-refund) docs: review refund logic
+|/  
+* d04db9f (origin/racheli-traytel/feature/early-access, feature/early-access) feat: add member pricing and waitlist
+| * fee9f58 (origin/ruth/fixes) wip: try new fonts
+| * 72063d7 debug: dump state to console
+| * 20cd6a9 WIP: try removing ticket limits
+| * 8284d98 fix: correct concert date in events.js
+| * 339324e WIP: new checkout flow (do not merge)
+|/  
+| * f7e8785 (origin/noa/refund) test: refund tests
+| * 61bfedd feat: refund calculation for cancelled orders
+|/  
+| * d4b1e35 (origin/dana/promo) test: add student discount tests
+| * 0841085 feat: student discount (15%)
+|/  
+* 6e5b25d (origin/main, origin/HEAD) feat: friendlier message for empty quantity
+* 9119fe2 fix: typo in hero heading
+* a61f4ad feat: add footer with links
+* 73924c4 perf: faster price formatting
+* 03bd4dd docs: update artist lineup text
+* c44fbf8 feat: add early-access promo banner
+* 62f48b5 (tag: v1.0) feat: purchase page UI
+* f4c58bc feat: payment provider config
+* 2cc7e97 feat: event details data
+* 8a944f6 feat: ticket price calculation with tests
+* ed1b1e9 Initial commit: project skeleton and exercise tooling
